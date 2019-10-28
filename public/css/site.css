@@ -1,0 +1,93 @@
+body {
+  font-family: 'Helvetica Neue', Verdana, Helvetica, Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 72px;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.125em;
+  color: #333;
+  line-height: 1.5em;
+}
+
+h1, h2, h3 {
+  color: #000;
+}
+h1 {
+  font-size: 2.5em
+}
+
+h2 {
+  font-size: 2em;
+  text-align: -webkit-center;
+}
+
+h3 {
+  font-size: 1.5em
+}
+
+a {
+  text-decoration: none;
+  color: #09f;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#jugs-container {
+  display: flex;
+  padding: 0 170px;
+}
+
+.jug {
+  margin: 5px;
+  position: relative;
+  height: 300px;
+  width: 64px;
+}
+
+.waters {
+  position: absolute;
+  bottom: 0px;
+  border: 1px solid grey;
+}
+
+.water {
+  width: 60px;
+  height: 30px;
+  border: 1px solid grey;
+}
+
+.blinking{
+    animation: blinkingText 0.5s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #a3060b;    }
+    40%{    color: transparent; }
+    50%{    color: transparent; }
+    60%{    color: transparent;  }
+    100%{   color: #a3060b;    }
+}
+
+.win-screen {
+  display: flex;
+  flex-direction: column;
+  padding: 0 194px;
+}
+
+img {
+  width: 220px;
+}
+
+.jug-info {
+  text-align: -webkit-center;
+  border: 3px solid white;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 15px;
+}
+
+.game-intro {
+  padding: 0 100px;
+}

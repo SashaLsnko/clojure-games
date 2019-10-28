@@ -1,0 +1,4 @@
+.idea
+clojure-games.iml
+figwheel_server.log
+target/
